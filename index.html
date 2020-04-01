@@ -1,0 +1,71 @@
+<!doctype html>
+<html>
+  <head>
+    <!-- Material Design Lite -->
+    <script src="../Covid 19 Tracer/Material Design Lite/material.min.js"></script>
+    <script src="../Covid 19 Tracer/Ghana Regions/new_regions.js"></script>
+    <script src="../Covid 19 Tracer/Ghana Regions/corona_cases.js"></script>
+    <link rel="stylesheet" href="../Covid 19 Tracer/Material Design Lite/material.min.css">
+    <!-- Material Design icon font -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="styles.css">
+
+  </head>
+  <body>
+    <!-- Always shows a header, even in smaller screens. -->
+    <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+      <header class="mdl-layout__header">
+        <div class="mdl-layout__header-row">
+          <!-- Title -->
+          <span class="mdl-layout-title" id="main-title">Covid-19 Tracer</span>
+          <!-- Add spacer, to align navigation to the right -->
+          <div class="mdl-layout-spacer"></div>
+          <!-- Navigation. We hide it in small screens. -->
+          <!-- <nav class="mdl-navigation mdl-layout--large-screen-only">
+            <a class="mdl-navigation__link" href="">Link</a>
+            <a class="mdl-navigation__link" href="">Link</a>
+            <a class="mdl-navigation__link" href="">Link</a>
+            <a class="mdl-navigation__link" href="">Link</a>
+          </nav> -->
+        </div>
+      </header>
+      <div class="mdl-layout__drawer">
+        <span class="mdl-layout-title">Title</span>
+        <nav class="mdl-navigation">
+          <a class="mdl-navigation__link" href="">Link</a>
+          <a class="mdl-navigation__link" href="">Link</a>
+          <a class="mdl-navigation__link" href="">Link</a>
+          <a class="mdl-navigation__link" href="">Link</a>
+        </nav>
+      </div>
+      <main class="mdl-layout__content">
+        <div class="page-content">
+          <div class="mdl-grid">
+            <div class="mdl-cell mdl-cell--10-col" id="map-grid">
+              <link rel="stylesheet" href="../Covid 19 Tracer/leaflet js/leaflet.css">
+              <script src="../Covid 19 Tracer/leaflet js/leaflet.js"></script>
+              <!-- div for map -->
+              <div id="map">
+
+              </div>
+            </div>
+            <div class="mdl-cell mdl-cell--2-col">
+              <div id="covid-text">
+                <h6 id="date"></h6>
+                <script>
+                  dt=new Date()
+                  document.getElementById("date").innerHTML = dt.toDateString();
+                </script>
+                <h6>Ghana Covid-19 Updates</h6>
+                <p>Total Comfirmed Cases: 195</br><div id="recovered">Recovered: 03</div> </br><div id="deaths">Death: 05 </div></p>
+              </div>
+              
+            </div>
+            <!-- <div class="mdl-cell mdl-cell--2-col">Column 3</div> -->
+          </div>
+        </div>
+      </main>
+    </div>
+    <script src="../Covid 19 Tracer/map_codes.js"></script>
+  </body>
+</html>

@@ -1,0 +1,68 @@
+#main-title {
+  font-size: x-large;
+}
+#map-grid{
+  background-color: aquamarine;
+  border: solid blue;
+}
+#map{
+  height: 620px;
+}
+.info {
+  padding: 6px 8px;
+  font: 14px/16px Arial, Helvetica, sans-serif;
+  background: white;
+  background: rgba(255,255,255,0.8);
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+  border-radius: 5px;
+}
+.info h5 {
+  margin: 0 0 5px;
+  color: #777;
+}
+.info h6 {
+  margin: 0 0 5px;
+  color: red;
+  font-weight: bold;
+}
+.custom-popup{
+  color: rgb(41, 41, 48);
+  font-weight: bold;
+  font-size: 15px;
+}
+
+.custom-popup table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.custom-popup th, td {
+  padding: 8px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+tr:hover {background-color: #d2eecc;}
+
+.popup-heading{
+  font-weight: bold;
+}
+#covid-text{
+  border: solid white;
+  padding-left: 10px;
+  padding-bottom: 10px;
+  padding-top: 2px;
+  background-color: #3f51b5;
+  color: white;
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,.14), 0 3px 1px -2px rgba(0,0,0,.2), 0 1px 5px 0 rgba(0,0,0,.12);
+}
+#covid-text p{
+  font-size: 16px;
+}
+#recovered{
+  color: rgb(21, 255, 0);
+  font-weight: bold;
+}
+#deaths{
+  color: red;
+  font-weight: bold;
+}
